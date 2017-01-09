@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="齐天大圣物流配送"
+        android:id="@+id/textView2"
+        android:textColor="#666"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="齐天大圣技术部\n联系我们：xxxxx@da99.com"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

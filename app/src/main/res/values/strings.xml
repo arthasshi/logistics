@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">大圣物流</string>
+    <string name="search_hint">输入地址</string>
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/c_item_logi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        card_view:cardElevation="6dp"
+        card_view:cardBackgroundColor="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_item_order_num"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:text="订单编号:123456"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_item_order_num"
+                android:text="订单金额:32￥"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tv_order_price"/>
+            <LinearLayout
+                android:id="@+id/ll_item_logi_address"
+                android:layout_below="@+id/tv_item_order_num"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a6a6a6"
+                    android:textColor="#fff"
+                    android:paddingLeft="5dp"
+                    android:text="from"/>
+                <TextView
+                    android:id="@+id/tv_item_logi_shopname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:padding="5dp"
+                     android:background="#f5f5f5"
+                    android:text="张亮麻辣烫:15533163886" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_item_logi_shopaddress"
+                    android:text="张亮麻辣烫万达广场店"
+                    android:padding="5dp"
+                    android:background="#f5f5f5"
+                    android:textColor="@color/colorPrimary"
+                     />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#a6a6a6"
+                    android:gravity="right"
+                    android:textColor="#fff"
+                    android:paddingRight="5dp"
+                    android:text="to"/>
+                <TextView
+                    android:id="@+id/tv_item_logi_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="phone"
+                    android:padding="5dp"
+                    android:background="#f5f5f5"
+                    android:gravity="right"
+                    android:text="Arthas:15533163886" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_item_logi_address"
+                    android:padding="5dp"
+                    android:text="廊坊市广阳区百子湾小区5-1-301"
+                    android:textColor="@color/colorPrimary"
+                    android:background="#f5f5f5"
+                    android:gravity="right"
+                     />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:id="@+id/tv_item_logi_order"
+                android:layout_below="@+id/ll_item_logi_address"
+                android:drawableRight="@drawable/line_yipx"
+                android:layout_marginTop="4dp"
+                android:text="商品列表 "/>
+           <LinearLayout
+               android:id="@+id/ll_item_logi_orderlist"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               android:layout_below="@+id/tv_item_logi_order"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="milk"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="milk"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="milk"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="milk"/>
+           </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_item_logi_move"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_item_logi_orderlist"
+                android:gravity="center"
+                android:background="@drawable/alpha_white_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_item_logi_tip"
+                    android:layout_marginTop="5dp"
+                    android:background="#e9e9e9"
+                    android:textColor="#ff3333"
+                    android:padding="4dp"
+
+                    android:text="备注：午间配送，家里有人"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:id="@+id/ll_item_logi_status">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未接单···"
+                        android:id="@+id/tv_item_logi_stat1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已接单···"
+                        android:id="@+id/tv_item_logi_stat2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已取货···"
+                        android:id="@+id/tv_item_logi_stat3" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="配送完成"
+                        android:id="@+id/tv_item_logi_stat4" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_btn"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:text="配送中"
+                    android:padding="5dp"
+
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/tv_item_logi_logistat"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="#fff"
+                android:text="货到付款"
+                android:padding="5dp"
+                android:background="@drawable/shape_coner_red_bg"
+                android:id="@+id/tv_item_logi_logitype"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_order_num"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/tv_item_logi_addtime" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

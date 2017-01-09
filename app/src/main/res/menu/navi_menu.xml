@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single" android:id="@+id/menu_navi_main">
+    <item
+        android:id="@+id/nav_delivery"
+        android:title="物流订单"/>
+    <item
+        android:id="@+id/nav_1"
+        android:title="完成订单"/>
+    <item
+        android:id="@+id/nav_2"
+        android:title="取消订单"/>
+    <item
+        android:id="@+id/nav_3"
+        android:title="商家列表"/>
+    <item android:id="@+id/navi_about"
+        android:title="联系我们"/>
+</group>
+
+</menu>
